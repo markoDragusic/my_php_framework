@@ -1,10 +1,12 @@
 <?php namespace App;
 
 /**
- * @author Marko Dragusic
+ * @author Marko Dragusic https://github.com/markoDragusic
  * A simple PHP framework base on instruction from the book 
  * "Beginning PHP: Master the latest features of PHP 7 and fully embrace modern PHP development" 
  * by David Carr and Markus Gray (published by Packt) 
+ * 
+ * Set your db data here and rename this file to Config.php
  */
 
 class Config {

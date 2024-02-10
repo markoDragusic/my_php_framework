@@ -2,10 +2,11 @@
 
 namespace App\Controllers;
 
+use App\Helpers\Url;
 use System\BaseController;
 
 class Home extends BaseController {
     public function index(){
-        return $this->view->render('default');
+        Url::redirect('/user/login');
     }
 }

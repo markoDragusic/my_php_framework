@@ -18,7 +18,7 @@ class View
             }
         }
 
-        $filepath = "../app/views/$path.php";
+        $filepath = APPDIR."views/$path.php";
 
         if (file_exists($filepath)) {
             require $filepath;

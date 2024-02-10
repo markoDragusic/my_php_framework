@@ -4,11 +4,10 @@ use App\Config;
 use App\Helpers\Database;
 
 class BaseModel{
-    protected $db;
+    protected static $db;
 
-    public function _construct() {
+    public static function initDb() {
         $config = Config::get();
-
-        $this->db = Database::get($config);
+        self::$db = Database::get($config);
     }
 }

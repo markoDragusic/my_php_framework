@@ -1,5 +1,7 @@
 <?php namespace App;
 
+use App\Helpers\Session;
+
 /**
  * @author Marko Dragusic https://github.com/markoDragusic
  * A simple PHP framework base on instruction from the book 
@@ -13,6 +15,8 @@ class Config {
 
     public static function get()
     {
+        Session::init();
+
         return [
             //set the namespace for routing
             'namespace' => 'App\Controllers\\',
